@@ -15,7 +15,7 @@ RUN wget https://github.com/ANTsX/ANTs/releases/download/v2.4.3/ants-2.4.3-ubunt
 # Clone FaceOff repository and set it as the working directory
 RUN apt-get update && \
     apt-get install -y git && \
-    git clone https://github.com/srikash/FaceOff.git /opt/FaceOff
+    git clone https://github.com/DCAN-Labs/FaceOff.git /opt/FaceOff
 WORKDIR /opt/FaceOff
 
 # Set ANTs path in environment variables
