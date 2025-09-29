@@ -9,7 +9,7 @@ RUN apt-get update && \
 RUN wget https://github.com/ANTsX/ANTs/releases/download/v2.4.3/ants-2.4.3-ubuntu-18.04-X64-gcc.zip && \
     unzip ants-2.4.3-ubuntu-18.04-X64-gcc.zip && \
     rm ants-2.4.3-ubuntu-18.04-X64-gcc.zip && \
-    mv ants-2.4.3-ubuntu-18.04-X64-gcc /opt/ants && \
+    mv ants-2.4.3/* /opt/ants && \
     export ANTSPATH=/opt/ants/bin/
 
 # Clone FaceOff repository and set it as the working directory
